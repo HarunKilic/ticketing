@@ -4,12 +4,7 @@ X S16 1:30 onsdag
 X S17 3:00 onsdag
 X S18 0:30 onsdag
 X S19 4:00 torsdag
-S20 1:30 torsdag
-S21 2:30 fredag
-S22 1:30 fredag
+X S20 1:30 torsdag
+X S21 2:30 fredag
+X S22 1:30 fredag
 S23 2:30 fredag
-
-
-5 t om dagen
-
-6:00 t
