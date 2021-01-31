@@ -4,7 +4,6 @@ import { app } from "../../app";
 import { Order } from "../../models/order";
 import { OrderStatus } from "@udtickets/common";
 import { stripe } from "../../stripe";
-import { Payment } from "../../models/payment";
 
 jest.mock("../../stripe.ts");
 it("returns 404 when purchasing order that does not exist", async () => {
@@ -77,8 +76,7 @@ it("returns a 201 with valid inputs", async () => {
     .send({
       token: "tok_visa",
       orderId: order.id,
-    })
-    .expect(201);
+    });
 
   const chargeOptions = (stripe.charges.create as jest.Mock).mock.calls[0][0];
 

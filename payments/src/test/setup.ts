@@ -14,8 +14,8 @@ let mongo: MongoMemoryServer;
 
 jest.mock("../nats-wrapper.ts");
 
-// process.env.STRIPE_KEY =
-//   "sk_test_51CyfDUFhmo8EshjhCNYQWUAR9ySVsouXFTaj3I2dPUsgs5URFeMDx1YLQsUSBLoMJQ2NQuoQktjmG3njziVeXufl00yk55gfnG";
+process.env.STRIPE_KEY =
+  "sk_test_51CyfDUFhmo8EshjhCNYQWUAR9ySVsouXFTaj3I2dPUsgs5URFeMDx1YLQsUSBLoMJQ2NQuoQktjmG3njziVeXufl00yk55gfnG";
 
 beforeAll(async () => {
   process.env.JWT_KEY = "fewfwe";
