@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Home = ({ currentUser, tickets }) => {
+const Home = ({ tickets }) => {
   const ticketList = tickets.map((ticket) => {
     return (
       <tr key={ticket.id}>
